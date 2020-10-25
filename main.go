@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/wesleyfreitas472/go-basico/aritmetica"
 	"encoding/json"
 	"fmt"
 	"strings"
@@ -335,6 +336,10 @@ func testJSONToString() {
 	fmt.Println(tipoProduto)
 }
 
+func testPacoteAritmetica(){
+	fmt.Printf("Resultado da soma 2 + 2: %d\n", aritmetica.Soma(2,2))
+}
+
 //Em GO existe a função init que executa antes da main. Mas o ponto de entrada é a função main
 func main() {
 	testStrings()
@@ -350,4 +355,5 @@ func main() {
 	testInterface()
 	testStructToJSON()
 	testJSONToString()
+	testPacoteAritmetica()
 }
